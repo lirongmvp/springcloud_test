@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
+spring:
+  application:
+    name: service-hi
+
+#Eureka Client
+#eureka.client.healthcheck.enabled			依赖spring-boot-starter-actuator包
+#eureka.instance.lease-renewal-interval-in-seconds		续约更新默认30s
+#eureka.instance.lease-expiration-duration-in-seconds 	续约到期90s
